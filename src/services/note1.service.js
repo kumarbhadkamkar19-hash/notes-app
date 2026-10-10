@@ -21,3 +21,12 @@ module.exports.updateNoteById = async (id, data) => {
 module.exports.deleteNoteById = async (id) => {
   return await noteModel.findByIdAndDelete(id);
 };
+
+module.exports.searchNotes1 = async (query) => {
+  return await Note.find({
+    $or: [
+      { title: { $regex: query, $options: "i" } },
+      { content: { $regex: query, $options: "i" } },
+    ],
+  });
+};

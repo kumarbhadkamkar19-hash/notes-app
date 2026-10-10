@@ -1,0 +1,5 @@
+POST:https://notes-app-zpux.onrender.com/api/note/create-note
+GET:https://notes-app-zpux.onrender.com/api/note/getallnotes
+GET:https://notes-app-zpux.onrender.com/api/note/getnote/NOTE_ID
+PATCH:https://notes-app-zpux.onrender.com/api/note/updatenote/NOTE_ID
+DELETE:https://notes-app-zpux.onrender.com/api/note/delete-note/NOTE_ID
